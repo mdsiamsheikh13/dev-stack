@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import { Suspense } from "react";
 import { ToastContainer } from "react-toastify";
@@ -29,7 +30,8 @@ function App() {
         <Technologies technologiesPromise={technologiesPromise}></Technologies>
       </Suspense>
 
-      <ToastContainer position="top-right" autoClose={2000} />
+      <footer></footer>
+      <ToastContainer position="bottom-right" autoClose={2000} />
     </>
   );
 }
