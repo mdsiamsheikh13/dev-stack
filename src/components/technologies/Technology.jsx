@@ -16,9 +16,9 @@ const Technology = ({ technologies }) => {
                     Pick one technology per category to build your ideal stack.
                 </p>
             </div>
-            <div className="flex flex-col justify-between lg:flex-row gap-5">
+            <div className="flex flex-col justify-between lg:flex-row gap-10">
                 <div className="w-full lg:w-2/3">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                         {technologies.map((technology) => {
                             return (
                                 <div

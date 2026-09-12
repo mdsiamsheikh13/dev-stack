@@ -2,6 +2,8 @@ import Banner from "./components/Banner";
 import Header from "./components/Header";
 
 import { Suspense } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Technologies from "./components/technologies/Technologies";
 
@@ -16,7 +18,7 @@ const technologiesData = async () => {
 function App() {
 
   const technologiesPromise = technologiesData();
-  console.log(technologiesPromise);
+
 
   return (
     <>
@@ -26,6 +28,8 @@ function App() {
       <Suspense fallback={<h2>Loading....</h2>}>
         <Technologies technologiesPromise={technologiesPromise}></Technologies>
       </Suspense>
+
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }
