@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
             Build Your Ideal <br />
-            <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
               Development Stack
             </span>
           </h2>
@@ -19,11 +19,11 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-            <button className="bg-gradient-to-r from-[#F97316] to-[#EC4899] hover:bg-gradient-to-l text-white py-2 px-5 rounded transition-all duration-300">
+            <button className="bg-linear-to-r from-[#F97316] to-[#EC4899] hover:bg-linear-to-l text-white py-2 px-5 rounded transition-all duration-300">
               Explore Technologies
             </button>
 
-            <button className="text-black hover:text-white border py-2 px-5 rounded hover:bg-gradient-to-r hover:from-[#F97316] hover:to-[#EC4899] transition-all duration-300">
+            <button className="text-black hover:text-white border py-2 px-5 rounded hover:bg-linear-to-l hover:from-[#F97316] hover:to-[#EC4899] transition-all duration-300">
               Learn More
             </button>
           </div>

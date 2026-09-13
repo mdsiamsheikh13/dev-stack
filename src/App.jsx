@@ -23,14 +23,14 @@ function App() {
 
   return (
     <>
-      <Header></Header>
-      <Banner></Banner>
+      <Header />
+      <Banner />
 
       <Suspense fallback={<h2>Loading....</h2>}>
         <Technologies technologiesPromise={technologiesPromise}></Technologies>
       </Suspense>
 
-      <footer></footer>
+      <footer />
       <ToastContainer position="bottom-right" autoClose={2000} />
     </>
   );

@@ -73,8 +73,8 @@ const Technology = ({
                                         onClick={() => onAddToStack(technology)}
                                         disabled={isSelected}
                                         className={`w-full text-xl py-2 rounded-lg mt-5 transition ${isSelected
-                                                ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                                                : "bg-black text-white hover:bg-slate-600"
+                                            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                                            : "bg-black text-white hover:bg-slate-600"
                                             }`}
                                     >
                                         {isSelected ? "Added to Stack" : "Add to Stack"}
@@ -129,6 +129,7 @@ const Technology = ({
                                                     {technology.category}
                                                 </p>
                                             </div>
+
                                         </div>
 
                                         {/* technology Delete */}
@@ -155,7 +156,9 @@ const Technology = ({
                         )}
                     </div>
                 </div>
+
             </div>
+
         </section>
     );
 };
